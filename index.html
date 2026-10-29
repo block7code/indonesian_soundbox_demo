@@ -31,6 +31,21 @@
         a {
             color: #2563eb;
         }
+
+        .demo-video {
+            width: 100%;
+            max-width: 320px;
+            margin: 24px auto;
+        }
+
+        .demo-video video {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            background: #000;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
     </style>
 </head>
 
@@ -39,10 +54,14 @@
         <h1>Indonesian Soundbox</h1>
         <p>Demo video for the Flutter package</p>
 
-        <video controls playsinline preload="metadata" width="100%">
-            <source src="./demo/demo_indonesian_soundbox.mp4" type="video/mp4">
-            Browser kamu tidak mendukung video.
-        </video>
+
+        <div class="demo-video">
+            <video controls playsinline preload="metadata">
+                <source src="./demo/demo_indonesian_soundbox.mp4" type="video/mp4">
+                Browser kamu tidak mendukung video.
+            </video>
+        </div>
+
 
         <p>
             <a href="./demo/demo_indonesian_soundbox.mp4" download>
